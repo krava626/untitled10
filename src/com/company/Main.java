@@ -6,7 +6,8 @@ public class Main {
         Men fred =  new Men("Fred",23);
         Men Ded=(Men) fred.clone();
 
-        System.out.println(fred);
-        System.out.println(Ded);
+       /* System.out.println(fred);
+        System.out.println(Ded);*/
+        System.out.println(fred.getClass()==Men.class);
     }
 }
