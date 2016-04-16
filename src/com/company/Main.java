@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         Men fred =  new Men("Fred",23);
-        Men Ded=(Men) fred.clone();
+        Men red =  new Men("Fred",23);
 
-       /* System.out.println(fred);
-        System.out.println(Ded);*/
-        System.out.println(fred.getClass()==Men.class);
+        System.out.println(fred.hashCode());
+        System.out.println(red.hashCode());
+        System.out.println(fred.hashCode()==red.hashCode());
     }
 }
